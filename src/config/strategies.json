@@ -1,0 +1,67 @@
+[
+  {
+    "name": "VWAP",
+    "enabled": true,
+    "brokers": ["upstox"],
+    "startTime": "09:30:00",
+    "stopTime": "15:01:00",
+    "candlesInterval": 15,
+    "traceCandlesInterval": 5,
+    "enableRiskManagement": true,
+    "withRiskManagement": {
+      "totalCapital": 10000,
+      "riskPercentagePerTrade": 1.0,
+      "maxTrades": 4
+    },
+    "withoutRiskManagement": {
+      "capitalPerTrade": 1000,
+      "margin": 10
+    },
+    "trailSL": false,
+    "slPercentage": 0.6,
+    "targetPercentage": 1.4,
+    "stocks": [
+      "ICICIBANK",
+      "HINDALCO",
+      "TATAMOTORS",
+      "BAJFINANCE",
+      "TATASTEEL",
+      "DIVISLAB",
+      "TITAN",
+      "RECLTD",
+      "MOTHERSUMI",
+      "PFC",
+      "PNB",
+      "DRREDDY",
+      "NMDC",
+      "RELIANCE",
+      "TECHM",
+      "BHARTIARTL",
+      "YESBANK",
+      "HINDZINC",
+      "BIOCON",
+      "NIITTECH",
+      "ITC",
+      "M&MFIN",
+      "AJANTPHARM",
+      "VOLTAS",
+      "STAR",
+      "JUBLFOOD",
+      "EXIDEIND",
+      "ZEEL",
+      "INDIACEM",
+      "TATAGLOBAL",
+      "JUSTDIAL"
+    ]
+  },
+  {
+    "name": "HolyGrail",
+    "enabled": false,
+    "trailSL": true,
+    "trailSLParams": {
+      "atrPeriod": 21,
+      "atrFactor": 3,
+      "considerCandleClose": false
+    }
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "server": {
+    "port": 8080,
+    "enableSSL": false,
+    "sslPort": 8443
+  },
+
+  "supportedBrokers": [
+    "zerodha", 
+    "upstox"
+  ],
+
+  "preferredBrokerForTicker": "zerodha",
+  "preferredBrokerForHistoryAPIs": "upstox",
+
+  "brokers": {
+   "zerodha": {
+    "user": "ZE7994",
+    "apiKey": "hwbllidk2ztxpg7j",
+    "apiSecret": "k8o08dmg1y4o5ir5o0fo7fd3nw0ivy1d",
+    "redirectUrl": "http://localhost:8888/apis/broker/login?broker=zerodha"
+   },
+   "upstox": {
+    "user": "227256",
+    "apiKey": "jqR7GK1zN85WLdAaqL6r4aXoUKNFawxfaEoj6NS9",
+    "apiSecret": "vuk0dgiodc",
+    "redirectUrl": "http://localhost:8888/apis/broker/login?broker=upstox"
+   }
+  }
+}

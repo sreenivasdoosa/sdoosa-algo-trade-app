@@ -1,0 +1,286 @@
+
+body {
+    font-family: 'PT Serif', serif;
+    color: #000;  
+    background: #f7f7f7;
+    margin: 5px;
+}
+
+.container-fluid {
+    background: #ebfdd6;
+}
+
+.navbar-header {
+    float: unset;
+    text-align: center;
+}
+
+.navbar-brand {
+    color: #0e2463;
+    height: 50px;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.logout-section {
+  margin-top: 5px;
+  float: right;
+}
+
+.logout-section .greeting {
+  font-size: small;
+  vertical-align: middle;
+}
+
+.logout-section .user-name {
+  font-size: large;
+  font-weight: 500;
+}
+
+.logout-btn {
+  margin-left: 10px;
+}
+
+table.table tbody tr td,
+table.table thead tr th,
+table.table thead {
+  border: 1px solid #f0f3f1;
+}
+
+table.table tbody tr td {
+  background: white;
+}
+
+table.table[lastrow-highlight='true'] tbody tr:last-child td {
+  background: #ecf5db;
+  font-weight: bold;
+}
+
+th {
+  background-color: rgb(179, 226, 150);
+}
+
+.login-panel {
+  text-align: right;
+}
+
+.pin-alert {
+  margin-top: 6px;
+}
+
+.pin-alert label {
+  margin-right: 12px;
+}
+
+
+.number-right {
+  text-align: right;
+}
+
+.number-pos {
+  color: green;
+}
+
+.number-neg {
+  color: red;
+}
+
+.delete-button {
+  cursor: pointer;
+  color: red;
+}
+
+.error-text {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 12px;
+  font-size: medium;
+}
+
+.error-text-login {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-control {
+  width: auto;
+}
+
+.btn {
+  margin-right: 12px;
+}
+
+.panel {
+  display: inline-block;
+  line-height: 2px;
+  margin-bottom: 1px;
+}
+
+.rowC {
+  display:flex;
+  flex-direction:row;
+}
+
+.label__checkbox {
+  display: none;
+}
+
+.label__check {
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid rgba(0,0,0,0.1);
+  background: white;
+  vertical-align: middle;
+  margin-right: 20px;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border .3s ease;
+
+  i.icon {
+    opacity: 0.2;
+    font-size: ~'calc(1rem + 1vw)';
+    color: transparent;
+    transition: opacity .3s .1s ease;
+    -webkit-text-stroke: 3px rgba(0,0,0,.5);
+  }
+
+  &:hover {
+    border: 5px solid rgba(0,0,0,0.2);
+  }
+}
+
+.label__checkbox:checked + .label__text .label__check {
+  animation: check .5s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards;
+
+  .icon {
+    opacity: 1;
+    transform: scale(0);
+    color: white;
+    -webkit-text-stroke: 0;
+    animation: icon .3s cubic-bezier(1.000, 0.008, 0.565, 1.650) .1s 1 forwards;
+  }
+}
+
+.center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes icon {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes check {
+  0% {
+    width: 1.5em;
+    height: 1.5em;
+    border-width: 5px;
+  }
+  10% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.1;
+    background: rgba(0,0,0,0.2);
+    border-width: 15px;
+  }
+  12% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.4;
+    background: rgba(0,0,0,0.1);
+    border-width: 0;
+  }
+  50% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 1;
+  }
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.input-with-icon input {
+  padding-left: 40px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  padding: 9px;
+}
+
+/* Tab Navigation */
+.nav-tabs {
+  margin: 0;
+  padding: 0;
+  border: 0;    
+}
+.nav-tabs > li > a {
+  cursor: pointer;
+  background: #DADADA;
+  border-radius: 0;
+  box-shadow: inset 0 -8px 7px -9px rgba(0,0,0,.4),-2px -2px 5px -2px rgba(0,0,0,.4);
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 0 rgba(0,0,0,.4),-2px -3px 5px -2px rgba(0,0,0,.4);
+}
+
+/* Tab Content */
+.tab-pane {
+  background: #F5F5F5;
+  box-shadow: 0 0 4px rgba(0,0,0,.4);
+  border-radius: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.broker-content {
+  background: #ffffff;
+  padding: 10px;
+  border: solid 1px #efefe6;
+}
+
+.modal-dialog {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1001;
+}
+

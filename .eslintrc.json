@@ -1,0 +1,69 @@
+{
+	"parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+		
+		"plugin:react/recommended"
+	],
+    "globals": {
+		"describe": true,
+		"it": true,
+		"beforeEach": true,
+		"afterEach": true,
+		"before": true,
+		"after": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+			"modules": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+	"settings": {
+		"react": {
+			"pragma": "React",
+			"version": "detect"
+		}
+	},
+    "rules": {
+		"space-before-blocks": 2,
+		"indent": [2, 2, { "SwitchCase": 1 }],
+		"brace-style": 2,
+		"comma-dangle": 2,
+		"no-unused-expressions": 2,
+		"eol-last": 2,
+		"dot-notation": 2,
+		"no-unused-vars": [2, { "args": "none"}],
+		"semi": [2, "always"],
+		
+		"max-len": 0,
+		"no-underscore-dangle": 0,
+		"new-cap": 0,
+		"no-use-before-define": 0,
+		"key-spacing": 0,
+		"eqeqeq": 0,
+		"strict": 0,
+		"space-unary-ops": 0,
+		"yoda": 0,
+		"no-loop-func": 0,
+		"no-trailing-spaces": 0,
+		"no-multi-spaces": 0,
+		"no-shadow": 0,
+		"no-alert": 0,
+		"no-process-exit": 0,
+		"no-extend-native": 0,
+		"block-scoped-var": 0,
+		"quotes": 0,
+		"consistent-return": 0,
+		"react/prop-types": 0
+    }
+}
