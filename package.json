@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "=7.4.4",
-    "async": "=2.6.2",
+    "async": "=2.6.4",
     "body-parser": "=1.19.0",
     "create-react-class": "=15.6.3",
     "express": "=4.16.4",
