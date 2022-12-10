@@ -13,7 +13,7 @@
     "async": "=2.6.2",
     "body-parser": "=1.19.0",
     "create-react-class": "=15.6.3",
-    "express": "=4.16.4",
+    "express": "=4.17.3",
     "express-session": "=1.16.1",
     "fs-extra": "=7.0.1",
     "guid": "=0.0.12",
